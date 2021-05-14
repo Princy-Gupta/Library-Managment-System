@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class AllBooks {
     void show(ArrayList<Book> list)
     {
+
         for (int i = 0; i < list.size(); i++) {
             Book b = list.get(i);
             if(b.issued)
@@ -13,6 +14,7 @@ public class AllBooks {
     }
 
     public void showAll(ArrayList<Book> list) {
+
 
         for (int i = 0; i < list.size(); i++) {
             Book b = list.get(i);

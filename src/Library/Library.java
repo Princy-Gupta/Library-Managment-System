@@ -4,8 +4,17 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Library {
-       static ArrayList<Book> list= new ArrayList<>();
-        public static void main(String args[]) {
+       static ArrayList<Book> list;
+       Library()
+       {
+           list= new ArrayList<>();
+
+
+       }
+
+
+    public static void main(String args[]) {
+
             System.out.println("Welcome to College Library");
 
             char ch='y';
@@ -31,22 +40,42 @@ public class Library {
 
                 if (num == 2) {
                     IssuedBook book = new IssuedBook();
+                    if(list==null)
+                    {
+                        System.out.println("No book is issued");
+                        return;
+                    }
                     book.issue(list);
                 }
                 if(num==3)
                 {
+                    if(list==null)
+                    {
+                        System.out.println("Empty Records");
+                        return;
+                    }
                     ReturnBook book= new ReturnBook();
                     book.returnB(list);
                 }
 
                 if(num==4)
                 {
+                    if(list==null)
+                    {
+                        System.out.println("Empty Records");
+                        return;
+                    }
                     AllBooks book= new AllBooks();
                     book.show(list);
                 }
 
                 if(num==5)
                 {
+                    if(list==null)
+                    {
+                        System.out.println("Empty Records");
+                        return;
+                    }
                     AllBooks book= new AllBooks();
                     book.showAll(list);
 
@@ -62,9 +91,9 @@ public class Library {
 
         }
 
+  
 
-
-        public static void check() {
+    public static void check() {
                 Scanner s= new Scanner(System.in);
 
                 String check=s.nextLine();

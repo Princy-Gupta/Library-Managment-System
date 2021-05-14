@@ -7,6 +7,7 @@ public class IssuedBook {
     Scanner s = new Scanner(System.in);
 
     void issue(ArrayList<Book> list) {
+
         System.out.println("Enter Book Name");
         String name = s.nextLine();
         int i=0;
