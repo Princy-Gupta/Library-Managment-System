@@ -9,7 +9,8 @@ public class Library {
     public static void main(String args[]) {
         preData();
 
-            System.out.println("Welcome to College Library");
+            System.out.println("......................Welcome to College Library........................");
+            System.out.println();
 
             char ch='y';
             while(ch=='y' || ch=='Y')

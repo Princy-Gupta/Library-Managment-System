@@ -19,13 +19,16 @@ public class IssuedBook {
                     b.issued = true;
 
                     System.out.println("Enter the date of issue");
-                    String date = s.nextLine();
                     s.nextLine();
+                    String date = s.nextLine();
                     b.date=date;
+
+
                     System.out.println("Enter the date of return");
                     String rdate = s.nextLine();
 
                     b.returnDate=rdate;
+
                     break;
 
                 }
