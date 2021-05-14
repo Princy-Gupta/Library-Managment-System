@@ -8,8 +8,9 @@ public class Library {
 
     public static void main(String args[]) {
         preData();
-
-            System.out.println("......................Welcome to College Library........................");
+        System.out.println();
+      
+            System.out.println("................................. WELCOME TO COLLEGE LIBRARY ..........................................");
             System.out.println();
 
             char ch='y';
