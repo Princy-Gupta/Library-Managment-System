@@ -7,7 +7,7 @@ public class ReturnBook {
     Scanner s = new Scanner(System.in);
     void returnB(ArrayList<Book> list)
     {
-        System.out.println("Enter Book Name");
+        System.out.println("Enter Book Id");
         int id = s.nextInt();
         int i=0;
         for (i = 0; i < list.size(); i++) {

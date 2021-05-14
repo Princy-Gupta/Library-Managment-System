@@ -8,7 +8,7 @@ public class IssuedBook {
 
     void issue(ArrayList<Book> list) {
 
-        System.out.println("Enter Book Name");
+        System.out.println("Enter Book Id");
         int id = s.nextInt();
         int i=0;
         for (i = 0; i < list.size(); i++) {
@@ -17,11 +17,14 @@ public class IssuedBook {
             {
                 if( b.issued == false) {
                     b.issued = true;
+
                     System.out.println("Enter the date of issue");
                     String date = s.nextLine();
+                    s.nextLine();
                     b.date=date;
                     System.out.println("Enter the date of return");
                     String rdate = s.nextLine();
+
                     b.returnDate=rdate;
                     break;
 
