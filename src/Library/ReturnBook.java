@@ -8,11 +8,11 @@ public class ReturnBook {
     void returnB(ArrayList<Book> list)
     {
         System.out.println("Enter Book Name");
-        String name = s.nextLine();
+        int id = s.nextInt();
         int i=0;
         for (i = 0; i < list.size(); i++) {
             Book b = list.get(i);
-            if (b.name.equals(name)) {
+            if (b.num==id) {
                 if (b.issued)
                 {
                     b.issued = false;
@@ -27,7 +27,7 @@ public class ReturnBook {
         }
         if(i==list.size())
         {
-            System.out.println("Sorry there is no book with name "+ name);
+            System.out.println("Sorry there is no book with id "+ id);
         }
 
     }

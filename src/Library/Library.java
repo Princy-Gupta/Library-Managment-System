@@ -4,16 +4,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Library {
-       static ArrayList<Book> list;
-       Library()
-       {
-           list= new ArrayList<>();
-
-
-       }
-
+       static ArrayList<Book> list =new ArrayList<>();;
 
     public static void main(String args[]) {
+        preData();
 
             System.out.println("Welcome to College Library");
 
@@ -91,7 +85,20 @@ public class Library {
 
         }
 
-  
+    private static void preData() {
+        Book b= new Book();
+        b.name="Broken Wings";
+        b.num=111;
+        list.add(b);
+        Book b1= new Book();
+        b1.num=112;
+        b1.name="My Truth";
+        b1.issued=true;
+        b1.date="14th May 2021";
+        b1.returnDate="22nd May 2021";
+        list.add(b1);
+    }
+
 
     public static void check() {
                 Scanner s= new Scanner(System.in);
